@@ -1,0 +1,12 @@
+{
+    "elements": {
+        "marquee": {
+            "attributes": {
+                "width": {},
+                "behaviour": {},
+                "height": {}
+            }
+        }
+    },
+    "attributes": {}
+}

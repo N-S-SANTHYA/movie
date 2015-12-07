@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+        <title>PAYMENT</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            function validate(){
+                    var regex=/^[0-9]+ $/;
+                var num=document.getElementById('cn').value; 
+              //alert(num.length);
+             if(isNaN(num)||(num.length !==16)){
+                alert("enter a valid card number");
+                document.getElementById('cn').focus();
+                return false;
+                 }
+                
+                
+         
+            var name=/^[a-zA-Z]+$/;
+            var cnam=document.getElementById('cname');
+            if(!name.test(cnam.value)){
+                alert("enter proper name");
+                return false;
+            }
+            
+        var exdate=document.getElementById('exp').value;
+        var exp=/^[0-9][0-9][/][0-1][0-9][/][0-9][0-9][0-9][0-9]+$/;
+         if(!exp.test(exdate)){
+             alert("enter in dd/mm/yr format");
+        return false; 
+        }   
+        var cno=document.getElementById('cvv');
+        var cvvv=/^[\d]+$/;
+        if(cno.length!==3){
+            alert("enter valid cvv number");
+            return false;
+        }
+        return true;}
+            </script>
+    </head>
+    <body><form name="myform" action="gateway" method="post">
+        <h1 style="color:goldenrod"><strong>PAYMENT GATEWAY------FEEL SECURE</strong></h1>
+
+        <h3 style="color:silver"><strong> ENTER YOUR CARD NUMBER  :</strong></h3><input id="cn" type="text" name="cardno" onblur="validate();" required/>
+        <h3 style="color:silver"><strong> ENTER NAME ON THE CARD  :</strong></h3><input id="cname" type="text" name="cardname" onblur="validate();" required/>
+        <h3 style="color:silver"><strong> ENTER CARD'S EXPIRY DATE:</strong></h3><input id="exp" type="text" name="cardexp" onblur="validate();"  required/>
+        <h3 style="color:silver"><strong> ENTER CARD'S CVV NUMBER :</strong></h3><input id="cvv" type="text" name="cardcvv" onblur="validate();" required/>
+        <h3 style="color:goldenrod"><strong> <button>submit!!</button></strong></h3>
+        </form>
+    </body>
+</html>

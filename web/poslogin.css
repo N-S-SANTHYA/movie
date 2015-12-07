@@ -1,0 +1,14 @@
+
+
+body{
+                    background-image: url("wallpaper-19.jpg");
+                    background-size: cover;
+                    
+            
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 50px;
+    width: 600px;
+    
+    
+}

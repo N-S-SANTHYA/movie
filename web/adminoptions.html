@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<meta charset="utf-8">
+<title>Admin options</title>
+<style type="text/css">
+    ul{
+        padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+        
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 50px;
+        text-align: left;
+    }
+    ul li a{
+        display: block;
+        padding: 10px 30px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: white;
+        background: black;
+    }
+    ul li ul.dropdown{
+        min-width: 125px; /* Set width of the dropdown */
+        background: black;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block;	/* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
+    #1{
+        margin-top: 30px;
+    }
+</style>
+</head>
+<body background="wallpaper-2.jpg">
+    <h3>Welcome Admin!!!</h3>
+    <div id="1">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="viewtheatre.jsp">View all theatres</a></li>
+        <li>
+            <a href="#">Manage POS Officers &#9662;</a>
+            <ul class="dropdown">
+                <li><a href="addpos.html">Add officer</a></li>
+                <li><a href="delpos.html">Delete officer</a></li>
+                <li><a href="viewpos.jsp">View all officers</a></li>
+            </ul>
+        </li>
+      
+    </ul></div>
+    <p></p>
+</body>
+</html>                                		

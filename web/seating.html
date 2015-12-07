@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="seat.css" />
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var count=0;
+            function book(id){
+                var img=document.getElementById(id);
+               // alert(img);
+               if(img.innerHTML.indexOf("avail.png") !== -1){
+                   document.getElementById(id).innerHTML="<img src='booked.png' />";
+                   count++;
+                  // alert("ifloop count="+count);
+               }
+               else{
+                   document.getElementById(id).innerHTML="<img src='avail.png' />";
+                   count--;
+                  // alert("else loop count="+count);
+               }
+                  var amtt=count*100;
+                  alert(amtt);
+                  document.getElementById("amt").value=amtt;
+            }
+       
+        </script>
+    </head>
+    <body><form name="mydata">
+        <div style=" background-color: black;padding-top:100px; color:white; text-align:center; font-size:25px;">
+           
+            SELECT YOUR SEATS HERE!!</div>
+        <div> NA-<img src="notavail.png" alt="notavail.png" /> AVAILABLE-<img src="avail.png" alt="avail.png"/><p>BOOKED-<img src="booked.png" alt="avail.png" /></p></div>
+        <table align="center" cellspacing="0px">
+            <tr>
+                <td>A</td>
+                <td id="A1" onclick="book('A1');"><img alt="avail.png" src="avail.png" /></td>
+                <td id="A2" onclick="book('A2');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="A3" onclick="book('A3');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="A4" onclick="book('A4');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="A5"><img src="notavail.png" alt="avail.png" /></td>
+                <td id="A6" onclick="book('A6');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="A7" onclick="book('A7');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="A8" onclick="book('A8');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="A9"><img src="notavail.png" alt="avail.png" /></td>
+                <td id="A10" onclick="book('A10');"><img src="avail.png" alt="avail.png" /></td>
+            </tr>
+            <tr><td>B</td>
+                <td id="B1" onclick="book('B1');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="B2" onclick="book('B2');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="B3"><img src="notavail.png" alt="notavail.png"/></td>
+                <td id="B4" onclick="book('B4');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="B5" onclick="book('B5');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="B6" onclick="book('B6');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="B7" onclick="book('B7');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="B8" onclick="book('B8');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="B9" onclick="book('B9');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="B10" onclick="book('B10');"><img src="avail.png" alt="avail.png"/></td>
+            </tr>
+             <tr><td>C</td>
+                <td id="C1"><img src="notavail.png" alt="notavail.png"/></td>
+                <td id="C2" onclick="book('C2');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="C3" onclick="book('C3');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="C4" onclick="book('C4');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="C5" onclick="book('C5');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="C6" onclick="book('C6');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="C7" onclick="book('C7');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="C8" onclick="book('C8');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="C9" onclick="book('C9');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="C10" onclick="book('C10');"><img src="avail.png" alt="avail.png"/></td>
+            </tr>
+            
+             <tr><td>D</td>
+                <td id="D1" onclick="book('D1');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="D2" onclick="book('D2');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="D3" onclick="book('D3');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="D4" onclick="book('D4');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="D5" onclick="book('D5');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="D6" onclick="book('D6');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="D7"><img src="notavail.png" alt="notavail.png" /></td>
+                <td id="D8" onclick="book('D8');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="D9" onclick="book('D9');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="D10" onclick="book('D10');"><img src="avail.png" alt="avail.png" /></td>
+            </tr>
+             <tr><td>E</td>
+                <td id="E1" onclick="book('E1');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="E2" onclick="book('E2');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="E3" onclick="book('E3');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="E4" onclick="book('E4');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="E5" onclick="book('E5');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="E6" onclick="book('E6');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="E7" onclick="book('E7');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="E8" onclick="book('E8');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="E9" onclick="book('E9');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="E10"><img src="notavail.png" alt="notavail.png"/></td>
+            </tr>
+             <tr><td>F</td>
+                <td id="F1" onclick="book('F1');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="F2" onclick="book('F2');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="F3" onclick="book('F3');"><img src="notavail.png" alt="notavail.png" /></td>
+                <td id="F4" onclick="book('F4');"><img src="avail.png" alt="avail.png" /></td>
+                <td id="F5" onclick="book('F5');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="F6" onclick="book('F6');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="F7" onclick="book('F7');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="F8" onclick="book('F8');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="F9" onclick="book('F9');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="F10" onclick="book('F10');"><img src="avail.png" alt="avail.png"/></td>
+            </tr>
+             <tr><td>G</td>
+                <td id="G1" onclick="book('G1');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="G2" onclick="book('G2');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="G3" onclick="book('G3');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="G4"><img src="notavail.png" alt="notavail.png"/></td>
+                <td id="G5" onclick="book('G5');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="G6" onclick="book('G6');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="G7" onclick="book('G7');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="G8" onclick="book('G8');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="G9" onclick="book('G9');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="G10" onclick="book('G10');"><img src="avail.png" alt="avail.png"/></td>
+            </tr>
+             <tr style="column-gap:2px "><td>H</td>
+                <td id="H1" onclick="book('H1');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="H2"><img src="notavail.png" alt="notavail.png"/></td>
+                <td id="H3" onclick="book('H3');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="H4" onclick="book('H4');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="H5"><img src="notavail.png" alt="notavail.png"/></td>
+                <td id="H6" onclick="book('H6');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="H7" onclick="book('H7');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="H8" onclick="book('H8');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="H9" onclick="book('H9');"><img src="avail.png" alt="avail.png"/></td>
+                <td id="H10" onclick="book('H10');"><img src="avail.png" alt="avail.png"/></td>
+            </tr>
+        </table>
+            
+        <div style=" background-color: black; color:white; text-align:center">
+                      <h3 style="color:silver"><strong>PAYABLE AMOUNT :</strong></h3><input id="amt" type="text" name="amount"  disabled />
+                      <a style="text-decoration:none;color:white" href="payment.html"> EXPRESS CHECKOUT</a></div>
+        </form>     
+        
+    </body>
+</html>
